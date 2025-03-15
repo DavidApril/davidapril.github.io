@@ -10,14 +10,6 @@ To get started, first install dependencies via npm:
 npm install
 ```
 
-Next, create a `.env.local` file in the root of your project and set the `NEXT_PUBLIC_SITE_URL` environment variable to your site's public URL:
-
-```
-NEXT_PUBLIC_SITE_URL=https://example.com
-```
-
-Then start the development server:
-
 ```bash
 npm run dev
 ```
@@ -63,20 +55,6 @@ Your content...
 ### Newsletter
 
 You can find the newsletter sign up form in `./src/components/SignUpForm.tsx` — if you have a newsletter you'll want to wire this up with whatever mailing list software you use to get it to actually work.
-
-### RSS feed
-
-The site uses a [route handler](https://nextjs.org/docs/app/building-your-application/routing/router-handlers) to automatically generate an RSS feed at run time based on the rendered home page.
-
-You can edit the metadata for the feed (like the title and description) in `./src/app/feed.xml/route.ts`.
-
-Make sure to set your `NEXT_PUBLIC_SITE_URL` environment variable as the RSS feed needs this to generate the correct links for each entry.
-
-## License
-
-This site template is a commercial product and is licensed under the [Tailwind UI license](https://tailwindui.com/license).
-
-## Learn more
 
 To learn more about the technologies used in this site template, see the following resources:
 
