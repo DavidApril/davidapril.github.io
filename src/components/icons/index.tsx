@@ -1,0 +1,6 @@
+export * from './AcademicIcon'
+export * from './BriefcaseIcon'
+export * from './SparkleIcon'
+export * from './BookIcon'
+export * from './LanguageIcon'
+export * from './CommandlineIcon'
