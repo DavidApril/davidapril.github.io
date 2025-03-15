@@ -1,5 +1,6 @@
 export * from './AcademicIcon'
 export * from './BriefcaseIcon'
+export * from './LinkedinIcon'
 export * from './SparkleIcon'
 export * from './BookIcon'
 export * from './LanguageIcon'
