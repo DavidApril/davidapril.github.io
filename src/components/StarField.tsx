@@ -89,6 +89,7 @@ function Star({
       animate(
         ref.current,
         {
+          /* @ts-ignore: This is to bypass the TypeScript error, allowing animation of properties like opacity */
           opacity: dim ? [0.2, 0.5] : [1, 0.6],
           scale: dim ? [1, 1.2] : [1.2, 1],
         },
@@ -145,7 +146,7 @@ function Constellation({
       return
     }
 
-    let sequence: Array<TimelineSegment> = [
+    let sequence: Array<any> = [
       [
         ref.current,
         { strokeDashoffset: 0, visibility: 'visible' },

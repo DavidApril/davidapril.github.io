@@ -10,13 +10,13 @@ export async function GET(req: Request) {
   }
 
   let author = {
-    name: 'Joe Davola',
-    email: 'crazy.joe@example.com',
+    name: 'David Agámez',
+    email: 'jesusdavidagamez4@gmail.com',
   }
 
   let feed = new Feed({
-    title: 'Commit',
-    description: 'Open-source Git client for macOS minimalists',
+    title: 'Curriculum vitae',
+    description: 'A better presentation for my curriculum vitae',
     author,
     id: siteUrl,
     link: siteUrl,
@@ -69,3 +69,5 @@ export async function GET(req: Request) {
     },
   })
 }
+
+export const dynamic = 'force-dynamic'
