@@ -6,6 +6,7 @@ import {
   BriefcaseIcon,
   CommandlineIcon,
   LanguageIcon,
+  LinkedinIcon,
   SparkleIcon,
 } from './icons'
 
@@ -60,29 +61,29 @@ function XIcon(props: React.ComponentPropsWithoutRef<'svg'>) {
 export function Intro() {
   return (
     <>
-      <div>
-        <FloatingDock
-          items={[
-            { title: 'Experiencia', icon: <BriefcaseIcon />, href: 'test' },
-            { title: 'Educación', icon: <AcademicIcon />, href: 'test' },
-            { title: 'Cursos', icon: <AcademicIcon />, href: 'test' },
-            { title: 'Idiomas', icon: <LanguageIcon />, href: 'test' },
-            {
-              title: 'Habilidades técnicas',
-              icon: <CommandlineIcon />,
-              href: 'test',
-            },
-          ]}
-        />
-        {/* <Link href="/"> */}
-        {/*   <Logo className="inline-block h-8 w-auto" /> */}
-        {/* </Link> */}
-      </div>
+      <FloatingDock
+        items={[
+          {
+            title: 'Experiencia',
+            icon: <BriefcaseIcon />,
+            href: '#experiencia_laboral',
+          },
+          { title: 'Educación', icon: <AcademicIcon />, href: '#educaci-n' },
+          { title: 'Cursos', icon: <BookIcon />, href: '#cursos' },
+          { title: 'Lenguajes', icon: <LanguageIcon />, href: '#lenguajes' },
+          {
+            title: 'Habilidades técnicas',
+            icon: <CommandlineIcon />,
+            href: '#habilidades_t-cnicas',
+          },
+        ]}
+      />
       <h1 className="mt-14 font-display text-4xl/tight font-light text-white">
         <span>Jesús D. Agámez</span>
         <br />
         <span className="text-sky-300">Ingeniero de Software</span>
       </h1>
+
       <p className="mt-4 text-sm/6 text-gray-300">
         Estudiante de Ingeniería de Software con 2 años de experiencia en el
         desarrollo especializado en tecnologías como JavaScript, TypeScript, y
@@ -95,13 +96,28 @@ export function Intro() {
       </p>
       <SignUpForm />
       <div className="mt-8 flex flex-wrap justify-center gap-x-1 gap-y-3 sm:gap-x-2 lg:justify-start">
-        <IconLink href="#" icon={BookIcon} className="flex-none">
-          Documentation
+        <IconLink
+          href="https://linkedin.com/in/david-agamez"
+          icon={LinkedinIcon}
+          target="_blank"
+          className="flex-none"
+        >
+          Linkedin
         </IconLink>
-        <IconLink href="#" icon={GitHubIcon} className="flex-none">
+        <IconLink
+          href="https://github.com/DavidApril"
+          icon={GitHubIcon}
+          target="_blank"
+          className="flex-none"
+        >
           GitHub
         </IconLink>
-        <IconLink href="#" icon={HackTheBoxIcon} className="flex-none">
+        <IconLink
+          href="https://app.hackthebox.com/profile/1580898"
+          icon={HackTheBoxIcon}
+          target="_blank"
+          className="flex-none"
+        >
           HackTheBox
         </IconLink>
       </div>
