@@ -21,14 +21,13 @@ const monaSans = localFont({
 })
 
 export const metadata: Metadata = {
-  title: 'Jesús D. Agámez - Software developer',
-  description:
-    'Commit is a lightweight Git client you can open from anywhere any time you’re ready to commit your work with a single keyboard shortcut. It’s fast, beautiful, and completely unnecessary.',
-  alternates: {
-    types: {
-      'application/rss+xml': `${process.env.NEXT_PUBLIC_SITE_URL}/feed.xml`,
-    },
-  },
+  title: 'Jesús D. Agámez - Desarrollador de software',
+  description: '',
+  // alternates: {
+  //   types: {
+  //     'application/rss+xml': `${process.env.NEXT_PUBLIC_SITE_URL}/feed.xml`,
+  //   },
+  //},
 }
 
 export default function RootLayout({
