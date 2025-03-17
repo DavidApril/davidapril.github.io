@@ -2,6 +2,7 @@ import { useId } from 'react'
 
 import { Intro, IntroFooter } from '@/components/Intro'
 import { ThemeToggle } from '@/components/ThemeToggle'
+import { Button, ScrollUpButton } from '.'
 
 function Timeline() {
   let id = useId()
@@ -95,6 +96,7 @@ export function Layout({ children }: { children: React.ReactNode }) {
     <>
       <FixedSidebar main={<Intro />} footer={<IntroFooter />} />
       <ThemeToggle />
+      <ScrollUpButton />
       <div className="relative flex-auto">
         <Timeline />
         <main className="space-y-20 py-20 sm:space-y-32 sm:py-32">
