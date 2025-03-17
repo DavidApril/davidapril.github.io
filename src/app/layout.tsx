@@ -23,11 +23,6 @@ const monaSans = localFont({
 export const metadata: Metadata = {
   title: 'Jesús D. Agámez - Desarrollador de software',
   description: '',
-  // alternates: {
-  //   types: {
-  //     'application/rss+xml': `${process.env.NEXT_PUBLIC_SITE_URL}/feed.xml`,
-  //   },
-  //},
 }
 
 export default function RootLayout({
@@ -38,7 +33,11 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={clsx('h-full antialiased', inter.variable, monaSans.variable)}
+      className={clsx(
+        'h-full scroll-smooth antialiased',
+        inter.variable,
+        monaSans.variable,
+      )}
       suppressHydrationWarning
     >
       <body className="flex min-h-full flex-col bg-white dark:bg-gray-950">
