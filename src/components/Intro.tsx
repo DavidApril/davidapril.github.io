@@ -92,7 +92,7 @@ export function Intro() {
           Linkedin
         </IconLink>
         <IconLink
-          href="https://github.com/DavidApril"
+          href="https://github.com/entr0phy4"
           icon={GitHubIcon}
           target="_blank"
           className="flex-none"
